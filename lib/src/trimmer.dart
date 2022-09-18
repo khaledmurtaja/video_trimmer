@@ -255,6 +255,7 @@ class Trimmer {
       debugPrint("FFmpeg process exited with state $state and rc $returnCode");
 
       if (ReturnCode.isSuccess(returnCode)) {
+        print(_command);
         debugPrint("FFmpeg processing completed successfully.");
         debugPrint('Video successfuly saved');
         onSave(_outputPath);
