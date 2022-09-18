@@ -261,6 +261,7 @@ class Trimmer {
         debugPrint('Video successfuly saved');
         onSave(_outputPath);
       } else {
+        print(_command);
         debugPrint("FFmpeg processing failed.");
         debugPrint('Couldn\'t save the video');
         onSave(null);
