@@ -244,6 +244,7 @@ class Trimmer {
     }
 
     _outputPath = '$path$videoFileName$_outputFormatString';
+    _command+='"volume=enable="between(t,5,10)":volume=0" ';
 
     _command += '"$_outputPath"';
 
